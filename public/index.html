@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="ははは"/>
+  <title>google</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <script defer src="/admin-notices-widget.js"></script>
+</head>
+<body>
+  <div id="announcement-modal" style="display: flex; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); justify-content: center; align-items: center; z-index: 9999; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <div style="background: white; border-radius: 16px; width: 90%; max-width: 500px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); overflow: hidden; position: relative; animation: slideIn 0.3s ease;">
+    <!-- 閉じるボタン -->
+    <button onclick="document.getElementById('announcement-modal').style.display='none';" style="position: absolute; top: 12px; left: 12px; background: none; border: none; font-size: 24px; color: #555; cursor: pointer; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background-color: #f0f0f0; transition: background 0.2s;">
+      ×
+    </button>
+    
+    <!-- お知らせ内容 -->
+    <div style="padding: 32px 24px 24px; color: #333; text-align: center;">
+      <h2 style="margin: 0 0 16px 0; font-size: 20px; color: #007BFF;">📢 このサイトについての前置き</h2>
+      <p style="margin: 0 0 16px 0; font-size: 15px; line-height: 1.6; text-align: left;">
+        この改造版JapaneseWeb(JWeb)をご使用してくださり誠にありがとうございます。<br><br>
+        これは、私 Chocolate-Wakame がHikari_5544様らのJapanese webを改造して、より機能を増やしたサイトとなります。<br><br>
+        ところでデジタル自由連盟の人たちは「Japanese web NEXT」の作成が決定し、このJWebの更新は少なくなる、またはなくなるそうです。<br><br>
+        しかし私の改造版JWebは今後とも更新をしていくつもりです。どうぞよろしくお願いします。<br>また11/22日にゲームの追加を行います<br><br>
+        今後、ここを修正してほしい。こんな機能を追加してほしい。などのご希望がありましたら<a href="https://scratch.mit.edu/projects/1236642406/">こちらに、コメントして</a>ください。<br><br>
+        Chocolate-Wakame
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ポップアップ表示アニメーション -->
+<style>
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+  <header>
+    <h1><a href="/">改造版Japanese Web</a></h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/proxy.list">Proxy</a>
+      <a href="/game.list">Games</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>ようこそ！</h2>
+      <p>最新の機能は<a href="/blog">こちら</a>からご覧ください。<br><br>
+         下にスクロールしてってね！
+      </p>
+    </section>
+
+    <section class="posts">
+      <article>
+        <h3><a href="/youtube">🆕しあtube</a></h3>
+        <p>ついに！youtube機能、ｷﾀ━━━━(ﾟ∀ﾟ)━━━━!!　しかも、簡単に量産できます！詳しくは<a href="/blog/youtube-copy">こちら</a></p>
+      </article>
+      <article>
+        <h3><a href="/labo5">🆕LABO5</a></h3>
+        <p>youtube機能の追加だよ～(≧▽≦)！最近しあ使えん人いるらしいからLABO５を借りパクしたよ～★</a></p>
+      </article>
+      <article>
+        <h3><a href="/proxy.list">ぷろきし</a></h3>
+        <p>Lightのやつをちょちょいと借りパクして作りました。履歴無しで見るには右上のボタン押してね。<br>たまに文字化けするかも。ごめんね</p>
+      </article>
+      <article>
+        <h3><a href="https://choco-yuki-plus-jxg3.onrender.com/genesis/">🆕YUKItube</a></h3>
+        <p>YUKITUBE(youtubeの機能)追加q(≧▽≦q)パスワードは入力しないのが正解。<br>つまりそのままアクセスする！を押したらおｋ。</a></p>
+      </article>
+      <article>
+        <h3><a href="/game.list">ゲーム🎮️</a></h3>
+        <p>げーーむぅ！ゲームゲームゲームゲームゲームゲームゲームゲームへへへへへ(?)</p>
+      </article>
+      <article>
+        <h3><a href="/blog">運営からのお知らせ(更新したよ）</a></h3>
+        <p>運営からのメッセージ。読んで損はないでしょう</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 JW</p>
+  </footer>
+</body>
+</html>
