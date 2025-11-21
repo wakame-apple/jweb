@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ゲーム一覧</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* ナビゲーションバー全体のスタイル */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        /* メニュー項目の基本スタイル */
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        /* ドロップダウンコンテナ */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        /* ドロップダウンボタン（カテゴリ名）のスタイル */
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 20px;
+            background-color: inherit;
+            font-family: inherit; /* 親要素のフォントを継承 */
+            margin: 0;
+            cursor: pointer;
+        }
+
+        /* 通常のリンクとボタンのホバー時の色 */
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #555;
+        }
+
+        /* ドロップダウンメニュー（サブメニュー）の中身 */
+        .dropdown-content {
+            display: none; /* 初期状態では非表示 */
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* サブメニュー内のリンクスタイル */
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* サブメニュー内のリンクのホバー色 */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* ドロップダウンコンテナにカーソルが乗った時にコンテンツを表示 */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* メインコンテンツのデモ表示 */
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ゲーム検索</title>
+    <link rel="stylesheet" href="/assets/css/itiran.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <h1><a href="/">改造版Japanese Web</a></h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/proxy.list">Proxy</a>
+      <a href="/game.list">Games</a>
+    </nav>
+  </header>
+      <body>
+
+    <div class="navbar">
+        <!-- 通常のリンク -->
+        
+      <a href="/new">新入荷したゲーム</a>
+        <a href="/game">全てのゲーム</a>
+      　<a href="/running">ランニングゲーム</a>
+      
+        <a href="/puzzle">パズルゲーム</a>
+        <a href="/action">アクションゲーム</a>
+      　<a href="/card">ボードゲーム</a>
+       <a href="/ect">その他のゲーム</a>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ゲーム検索</title>
+    <link rel="stylesheet" href="/assets/css/itiran.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="card-grid">
+            <!-- カードの項目はここから -->
+      <div class="card-grid">
+            <!-- カードの項目はここから -->
+           
+            <a href="/game/pou" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">Pou</h2>
+                    <p class="card-description">謎の宇宙生物「Pou」の世話をして、ごはんをあげたり、遊んであげたりして育てるペット育成ゲームです。</p>
+                </div>
+            </a>
+          
+            <a href="/game/monkeymart" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">MonkeyMart</h2>
+                    <p class="card-description">サルの店長になりレジを打ったり店を大きくしたりする、かわいさがやみつきになる経営ゲームです。</p>
+                </div>
+                   </a>
+
+            <a href="/game/city-world" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">City World (scratch)</h2>
+                    <p class="card-description">スクラッチの神ゲー。いいね👍️</p>
+                </div>
+            </a>
+            <a href="/game/電脳麻将" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">電脳麻将</h2>
+                    <p class="card-description">リアルに麻雀をプレイできる！「自分VSコンピューター」から「ネット対戦」さらには、AI同士の対決も！？</p>
+                </div>
+            <a href="/game/about" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">その他ゲーム</h2>
+                    <p class="card-description">主の都合によって、プロキシを通してやらないとできないゲーム。ゴメンネ。/prxyを使ってくだせえ。</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
+         
+            </a>
+        </div>
+    </div>
+</body>
+</html>
