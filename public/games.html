@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ゲーム一覧</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* ナビゲーションバー全体のスタイル */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        /* メニュー項目の基本スタイル */
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        /* ドロップダウンコンテナ */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        /* ドロップダウンボタン（カテゴリ名）のスタイル */
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 20px;
+            background-color: inherit;
+            font-family: inherit; /* 親要素のフォントを継承 */
+            margin: 0;
+            cursor: pointer;
+        }
+
+        /* 通常のリンクとボタンのホバー時の色 */
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #555;
+        }
+
+        /* ドロップダウンメニュー（サブメニュー）の中身 */
+        .dropdown-content {
+            display: none; /* 初期状態では非表示 */
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* サブメニュー内のリンクスタイル */
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* サブメニュー内のリンクのホバー色 */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* ドロップダウンコンテナにカーソルが乗った時にコンテンツを表示 */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* メインコンテンツのデモ表示 */
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ゲーム検索</title>
+    <link rel="stylesheet" href="/assets/css/itiran.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <h1><a href="/">改造版Japanese Web</a></h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/proxy.list">Proxy</a>
+      <a href="/game.list">Games</a>
+    </nav>
+  </header>
+      <body>
+
+    <div class="navbar">
+        <!-- 通常のリンク -->
+        
+      <a href="/new">新入荷したゲーム</a>
+        <a href="/game">全てのゲーム</a>
+      　<a href="/running">ランニングゲーム</a>
+      
+        <a href="/puzzle">パズルゲーム</a>
+        <a href="/action">アクションゲーム</a>
+      　<a href="/card">ボードゲーム</a>
+       <a href="/ect">その他のゲーム</a>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ゲーム検索</title>
+    <link rel="stylesheet" href="/assets/css/itiran.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="card-grid">
+            <!-- カードの項目はここから -->
+      <div class="card-grid">
+            <!-- カードの項目はここから -->
+            <a href="/game/tag" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">Tag</h2>
+                    <p class="card-description">時には大胆に走り抜け、鬼に捕まらないようスリル満点の鬼ごっこを繰り広げるステルスゲームです。</p>
+                </div>
+            </a>
+            <a href="/game/subwaysurfers" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">Subwaysurfers</h2>
+                    <p class="card-description">警官と犬から逃げ、列車をかわし、ひたすら走り続ける中毒性たっぷりの無限ランゲームです。</p>
+                </div>
+            </a>
+            <a href="/game/pou" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">Pou</h2>
+                    <p class="card-description">謎の宇宙生物「Pou」の世話をして、ごはんをあげたり、遊んであげたりして育てるペット育成ゲームです。</p>
+                </div>
+            </a>
+            <a href="/game/mrbullet" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">Mr.bullet</h2>
+                    <p class="card-description">曲がりくねった弾丸や跳弾を駆使して、一発で複数の敵を倒すスパイ気分が味わえる物理シューティングゲームです。</p>
+                </div>
+            </a>
+            <a href="/game/monkeymart" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">MonkeyMart</h2>
+                    <p class="card-description">サルの店長になりレジを打ったり店を大きくしたりする、かわいさがやみつきになる経営ゲームです。</p>
+                </div>
+            </a>
+            <a href="/game/mergestkingdom" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">MergestKingdom</h2>
+                    <p class="card-description">同じ種類のアイテムを3つ以上集めて、新しいアイテムを作りながら王国を広る、パズルと街づくりのゲームです。</p>
+                </div>
+            </a>
+            <a href="/game/littlealchemy2" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">LittleAlchemy2</h2>
+                    <p class="card-description">火・水・土・空気の4つの元素を組み合わせ、宇宙から生命まであらゆる物を生み出す、想像力が試されるゲームです。</p>
+                </div>
+            </a>
+            <a href="/game/ironsnout" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">IronSnout</h2>
+                    <p class="card-description">豚がカンフーでオオカミの大群をなぎ倒す、ハイテンポで爽快な格闘アクションゲームです。</p>
+                </div>
+            </a>
+            <a href="/game/headsoccer2023" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">HeadSoccer2023</h2>
+                    <p class="card-description">個性的な頭でっかちキャラクターたちが、ヘディングや必殺技を使ってゴールを奪い合う、変なサッカーゲームです。</p>
+                </div>
+            </a>
+            <a href="/game/hanger" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">Hanger</h2>
+                    <p class="card-description">スパイダーマンみたくロープを引っ掛けて飛び回りどこまで行けるかを競う、スリル満点のアクションゲームです。</p>
+                </div>
+            </a>
+            <a href="/game/gswitch" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">GSwitch</h2>
+                    <p class="card-description">重力を切り替えて壁や天井を駆け抜け避けられない障害物をすり抜ける、ハイスピードな反射神経ゲームです。</p>
+                </div>
+            </a>
+            <a href="/game/fruitninja" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">FruitNinja</h2>
+                    <p class="card-description">次々と飛び出すフルーツを斬りまくりハイスコアを狙う、爽快感がやみつきになるゲームです。ラグいです。</p>
+                </div>
+            </a>
+            <a href="/game/roper" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">Roper</h2>
+                    <p class="card-description">ロープを使いジャンプとかをしながら100以上のレベルを駆け抜ける、シンプル操作のパズルゲームです。</p>
+                </div>
+            </a>
+            <a href="/game/basketballstars" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">Basketball Stars</h2>
+                    <p class="card-description">高速の1vs1や2vs2で白熱したバスケ対戦が楽しめる、シンプルながら奥深いスポーツアクションゲームです。</p>
+                </div>
+            </a>
+            <a href="/game/stickmanhook" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">Stickman Hook</h2>
+                    <p class="card-description">棒人間を操作して、華麗にスイングしながらゴールを目指す、病みつきになる物理アクションゲームです。 </p>
+                </div>
+            </a>
+            <a href="/game/ballistic" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">Ballistic</h2>
+                    <p class="card-description">ボールでブロックを破壊し、機能を駆使してハイスコアを目指す、病みつきになる爽快パズルゲームです。</p>
+                </div>
+            </a>
+            <a href="/game/doodlejump" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">Doodle Jump</h2>
+                    <p class="card-description">描かれたキャラクターがジャンプで足場を乗り継ぎ、無限に上を目指すカジュアルなアクションゲームです。</p>
+                </div>
+            </a>
+            <a href="/game/driftboss" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">Drift Boss</h2>
+                    <p class="card-description"></p>
+                </div>
+            </a>
+            <a href="/game/vex3" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">vex 3</h2>
+                    <p class="card-description">様々なトラップを乗り越えながらゴールを目指す、高難易度のアスレチックアクションゲーム3つめです。</p>
+                </div>
+            </a>
+            <a href="/game/vex4" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">vex 4</h2>
+                    <p class="card-description">危険なトラップを乗り越えながらゴールを目指す、スピード感あふれる高難易度のアクションゲーム4つめです。</p>
+                </div>
+            </a>
+            <a href="/game/vex5" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">vex 5</h2>
+                    <p class="card-description">超絶ハードなトラップを駆け抜け、スティックマンの限界を超える究極のパルクールゲーム5つめです。</p>
+                </div>
+            </a>
+            <a href="/game/vex6" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">vex 6</h2>
+                    <p class="card-description">古代神殿の危険なコースを攻略し、64のスキンで自分だけのあなたをカスタムできるvexシリーズ6つめです。</p>
+                </div>
+            </a>
+            <a href="/game/geometrydash" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">geometrydash</h2>
+                    <p class="card-description">満を持しての登場！音楽に合わせ幾何学的な正方形を動かすゲームです。</p>
+                </div>
+            </a>
+            <a href="/game/1v1-lol" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">1v1 lol</h2>
+                    <p class="card-description">フォートナイト風の建築バトルで、誰でも簡単に1対1のスリル満点な対戦が楽しめる！</p>
+                </div>
+            </a>
+            <a href="/game/blockblast" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">BlockBlast</h2>
+                    <p class="card-description">ブロックを並べて消す、シンプルでaddictiveな数字パズル。</p>
+                </div>
+            </a>
+            <a href="/game/ダダサバイバーver10" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">ダダサバイバーver10(scratch)</h2>
+                    <p class="card-description">スクラッチ版ダダサバイバー。本家は手に入りませんでした...。</p>
+                </div>
+            </a>
+            <a href="/game/eaglercraft-1.20.1" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">Mine(Eagler)craft 1.20.1</h2>
+                    <p class="card-description">(違法)コピーマイクラ。パチモン1.20なんで、盾とかクロスボウとかは使えないかも(最新版1.21ぐらい)</p>
+                </div>
+            </a>
+            <a href="/game/city-world" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">City World (scratch)</h2>
+                    <p class="card-description">スクラッチの神ゲー。いいね👍️</p>
+                </div>
+            </a>
+            <a href="/game/電脳麻将" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">電脳麻将</h2>
+                    <p class="card-description">リアルに麻雀をプレイできる！「自分VSコンピューター」から「ネット対戦」さらには、AI同士の対決も！？</p>
+                </div>
+            <a href="/game/about" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">その他ゲーム</h2>
+                    <p class="card-description">主の都合によって、プロキシを通してやらないとできないゲーム。ゴメンネ。/prxyを使ってくだせえ。</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
+         
+            </a>
+        </div>
+    </div>
+</body>
+</html>
