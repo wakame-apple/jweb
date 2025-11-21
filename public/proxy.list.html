@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy検索</title>
+    <link rel="stylesheet" href="/assets/css/itiran.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="announcement-modal" style="display: flex; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); justify-content: center; align-items: center; z-index: 9999; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <div style="background: white; border-radius: 16px; width: 90%; max-width: 500px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); overflow: hidden; position: relative; animation: slideIn 0.3s ease;">
+    <!-- 閉じるボタン -->
+    <button onclick="document.getElementById('announcement-modal').style.display='none';" style="position: absolute; top: 12px; left: 12px; background: none; border: none; font-size: 24px; color: #555; cursor: pointer; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background-color: #f0f0f0; transition: background 0.2s;">
+      ×
+    </button>
+    
+    <!-- お知らせ内容 -->
+    <div style="padding: 32px 24px 24px; color: #333; text-align: center;">
+      <h2 style="margin: 0 0 16px 0; font-size: 20px; color: #007BFF;">📢 プロキシについて</h2>
+      <p style="margin: 0 0 16px 0; font-size: 15px; line-height: 1.6; text-align: left;">
+        ここにあるプロキシ(テスト版以外)はLightを借りパクしたものです<br><br>
+        ダックダックゴー検索型を開くときにエラーが出た場合は、　　　エラーになる前のサイトに戻って(ここ必須)、もう一回読み込みするのを何回かしたらできます。（これは修復しようがない。<br><br>
+        URL入力のほうが読み込みは早い。ちなURL入力するとこに、<a href="https://duckduckgo.com">https://duckduckgo.com</a>って貼り付けてもダックダックゴーで検索できるで。エラーばっかやったらそうして<br><br>
+        これらのプロキシは、ボットではないことを確認することはできません。つまり<a href="https://www.youtube.com">Youtube</a>や<a href="https://www.google.com">Google検索</a>などはプロキシを通しても使えないです。たまにページリダイレクトがあるサイトに行くと強制的にURLが変わるのでブロックされるかも。そのときはもう一回プロキシのサイトを開いてね(～￣▽￣)～(～￣▽￣)～<br><br>
+        まあプロキシがブロックされたなら<a href="https://scratch.mit.edu/projects/1236642406/">ここに言って</a>。修正するから<br><br>
+        Chocolate-Wakame
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<body>
+    <header>
+    <h1><a href="/">改造版Japanese Web</a></h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/proxy.list">Proxy</a>
+      <a href="/game.list">Games</a>
+    </nav>
+  </header>
+
+        <div class="card-grid">
+            <!-- カードの項目はここから -->
+            <a href="https://light-chocolates-wakame-proxy-v11.onrender.com/proxy" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">メインのプロキシ(ダックダックゴーでの検索型）</h2>
+                    <p class="card-description">検索した履歴はダックダックゴーなので追跡されないよ～(^^♪。使い方はフツーに検索✨見たらわかる(≧▽≦)</p>
+                </div>
+            </a>
+
+            <a href="https://light-chocolates-wakame-proxy-v12.onrender.com/proxy" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">予備用のプロキシ(ダックダックゴーでの検索型）</h2>
+                    <p class="card-description">メインのやつが使えんくなったら使ってね～φ(゜▽゜*)♪使い方は左のと同じだよ～!(^^)!機能は特に変わんないよ～('◇')ゞ</p>
+                </div>
+            </a>
+
+            <a href="https://light-v1-choco.onrender.com/proxy/" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">メインのプロキシ(URL入力型）</h2>
+                    <p class="card-description">一部サイトの写真を取得できない、文字化する場合があるかも。検索した履歴を残らないようにするには右上のところを押してね!(^^)!。使い方としては、見たいサイトのURLを入力してね～</p>
+                </div>
+            </a>
+
+            <a href="https://light-chocolates-wakame-proxy-v2.onrender.com/proxy" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">予備用のプロキシ(URL入力型）</h2>
+                    <p class="card-description">予備用だぜψ(｀∇´)ψ.URLを入力して使うやつだよ。機能は同じ(^O^)／</p>
+                </div>
+            </a>
+
+            <a href="/test-proxy" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">一応ほかのプロキシ（テスト版）</h2>
+                    <p class="card-description">使い方右上のボタンクリックで、URL打ち込むところが出てくるから打ち込んでね。できるだけメインのproxy使ってください。Q.Why?-A.写真取得できないし、検索してからほかのページに飛べないから。</p>
+                </div>
+            </a>
+
+            <a href="https://scratch.mit.edu/projects/1236642406/" class="card-link">
+                <div class="card">
+                    <h2 class="card-title">もしメインと予備のプロキシどっちかがブロックされたらここにコメントしてね♪</h2>
+                    <p class="card-description">プロキシを開いたときにエラーが出てきても、再読み込みすれば治るから、あわてなくていいよ(●'◡'●)</p>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</body>
+</html>
